@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entradas y salidas - InventSoft</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="entradas">
+<div class="app">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="main">
+    <header class="topbar" id="topbar" data-title="Entradas y salidas"></header>
+    <div class="content">
+      <div class="page-head"><h1>Kárdex de movimientos</h1><p>Registra entradas y salidas y vincúlalas a una orden de trabajo o factura.</p></div>
+
+      <div class="card">
+        <form class="form" id="mov-form">
+          <div class="field"><label for="mov-tipo">Tipo de movimiento</label><select id="mov-tipo"><option>Entrada</option><option>Salida</option></select></div>
+          <div class="field"><label for="mov-fecha">Fecha</label><input id="mov-fecha" type="date" required></div>
+          <div class="field full"><label for="mov-mat">Material</label><select id="mov-mat"></select></div>
+          <div class="field"><label for="mov-cant">Cantidad</label><input id="mov-cant" type="number" min="1" required></div>
+          <div class="field"><label for="mov-resp">Responsable</label><select id="mov-resp"><option>Yonathan Mendoza</option><option>Carlos Pinto</option><option>Andrea Ruiz</option><option>Luis Ortega</option></select></div>
+          <div class="field full"><label for="mov-ref">Orden de trabajo o factura</label><input id="mov-ref" type="text" placeholder="Ej.: O.T. 1046 o Factura F-2240"></div>
+          <div class="error full" id="mov-error" role="alert"></div>
+          <div class="full"><button class="btn" type="submit">Registrar movimiento</button></div>
+        </form>
+      </div>
+      <div class="card">
+        <div class="card-title"><h2>Historial</h2><button class="btn sm cyan" data-export="table" data-target="#t-kardex" data-name="kardex">Exportar a Excel</button></div>
+        <div class="table-wrap"><table id="t-kardex"><thead><tr><th>Fecha</th><th>Material</th><th>Tipo</th><th>Cantidad</th><th>Responsable</th><th>Referencia</th></tr></thead><tbody id="tbl-kardex"></tbody></table></div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

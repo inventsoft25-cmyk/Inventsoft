@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock en tiempo real - InventSoft</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="stock">
+<div class="app">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="main">
+    <header class="topbar" id="topbar" data-title="Stock en tiempo real"></header>
+    <div class="content">
+      <div class="page-head"><h1>Stock en tiempo real</h1><p>Estado actual de cada material frente a su nivel mínimo.</p></div>
+
+      <div class="grid g3" id="stock-cards"></div>
+      <div class="card" style="margin-top:20px">
+        <div class="table-wrap"><table><thead><tr><th>Material</th><th>Disponible</th><th>Mínimo</th><th>Estado</th><th>Acción</th></tr></thead><tbody id="tbl-stock"></tbody></table></div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard - InventSoft</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="dashboard">
+<div class="app">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="main">
+    <header class="topbar" id="topbar" data-title="Dashboard"></header>
+    <div class="content">
+      <div class="page-head"><h1>Panel central</h1><p>Resumen del inventario y los últimos movimientos del taller.</p></div>
+
+      <div class="grid g4" id="kpis"></div>
+      <div class="card" style="margin-top:20px">
+        <div class="card-title"><h2>Movimientos recientes</h2><a class="btn sm ghost" href="entradas.html">Ver kárdex</a></div>
+        <div class="table-wrap"><table><thead><tr><th>Fecha</th><th>Material</th><th>Tipo</th><th>Cantidad</th><th>Responsable</th><th>Referencia</th></tr></thead><tbody id="tbl-mov"></tbody></table></div>
+      </div>
+      <div class="card">
+        <h2 style="margin-bottom:14px">Accesos directos</h2>
+        <div class="actions">
+          <a class="btn" href="inventario.html">Inventario</a><a class="btn" href="entradas.html">Entradas y salidas</a>
+          <a class="btn" href="stock.html">Stock</a><a class="btn" href="alertas.html">Alertas</a>
+          <a class="btn" href="pedidos.html">Pedidos</a><a class="btn" href="reportes.html">Reportes</a>
+          <a class="btn ghost" href="usuarios.html">Usuarios</a><a class="btn ghost" href="niveles.html">Niveles</a>
+          <a class="btn ghost" href="exportar.html">Exportar</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

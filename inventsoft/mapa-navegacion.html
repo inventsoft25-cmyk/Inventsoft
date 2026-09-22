@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa de navegación - InventSoft</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="mapa">
+<div class="app">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="main">
+    <header class="topbar" id="topbar" data-title="Mapa de navegación"></header>
+    <div class="content">
+      <div class="page-head"><h1>Mapa de navegación</h1><p>Recorrido del prototipo, de la página de inicio a cada módulo.</p></div>
+
+      <div class="card">
+        <div class="flow">
+          <div class="node">index.html<small>Página de inicio</small></div><div class="arrow">↓</div>
+          <div class="node">login.html<small>Inicio de sesión</small></div>
+          <div class="flow-row"><a href="recuperar.html" class="node" style="text-decoration:none">recuperar.html<small>Recuperar contraseña</small></a></div><div class="arrow">↓</div>
+          <div class="node">dashboard.html<small>Panel central</small></div><div class="arrow">↓</div>
+          <div class="flow-row">
+            <a class="node" href="inventario.html" style="text-decoration:none">Inventario</a>
+            <a class="node" href="entradas.html" style="text-decoration:none">Entradas y salidas</a>
+            <a class="node" href="stock.html" style="text-decoration:none">Stock</a>
+            <a class="node" href="alertas.html" style="text-decoration:none">Alertas</a>
+            <a class="node" href="pedidos.html" style="text-decoration:none">Pedidos</a>
+          </div>
+          <div class="flow-row">
+            <a class="node" href="reportes.html" style="text-decoration:none">Reportes</a>
+            <a class="node" href="usuarios.html" style="text-decoration:none">Usuarios</a>
+            <a class="node" href="niveles.html" style="text-decoration:none">Niveles</a>
+            <a class="node" href="exportar.html" style="text-decoration:none">Exportar</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="margin-bottom:12px">Guía para la sustentación</h2>
+        <ol class="steps">
+          <li>Abre <strong>index.html</strong> y presenta el propósito del sistema.</li>
+          <li>Entra a <strong>login.html</strong>, muestra el enlace de recuperar contraseña e inicia sesión.</li>
+          <li>En el <strong>Dashboard</strong>, explica los indicadores y los movimientos recientes.</li>
+          <li>Registra una salida en <strong>Entradas y salidas</strong> y observa cómo cambia el stock.</li>
+          <li>Revisa <strong>Alertas</strong> y crea un pedido desde el botón de reposición.</li>
+          <li>Termina en <strong>Reportes</strong> (tu módulo) filtrando por fecha y categoría, y exporta.</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

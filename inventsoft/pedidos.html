@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedidos a proveedores - InventSoft</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="pedidos">
+<div class="app">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="main">
+    <header class="topbar" id="topbar" data-title="Pedidos a proveedores"></header>
+    <div class="content">
+      <div class="page-head"><h1>Pedidos a proveedores</h1><p>Crea una requisición de láminas, pinturas o consumibles.</p></div>
+
+      <div class="card">
+        <form class="form" id="ped-form">
+          <div class="field"><label for="ped-prov">Proveedor</label><select id="ped-prov"><option>Pinturas del Norte</option><option>Aceros Bogotá</option><option>Distribuidora Autopartes</option><option>Suministros Industriales</option></select></div>
+          <div class="field"><label for="ped-urg">Urgencia</label><select id="ped-urg"><option>Alta</option><option selected>Media</option><option>Baja</option></select></div>
+          <div class="field"><label for="ped-mat">Material</label><select id="ped-mat"></select></div>
+          <div class="field"><label for="ped-cant">Cantidad</label><input id="ped-cant" type="number" min="1" required></div>
+          <div class="full"><button class="btn" type="submit">Enviar pedido</button></div>
+        </form>
+      </div>
+      <div class="card">
+        <h2 style="margin-bottom:14px">Pedidos registrados</h2>
+        <div class="table-wrap"><table><thead><tr><th>Fecha</th><th>Proveedor</th><th>Material</th><th>Cantidad</th><th>Urgencia</th><th>Estado</th></tr></thead><tbody id="tbl-ped"></tbody></table></div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
