@@ -599,11 +599,12 @@ overflow:hidden
 /* Marca de agua / Fondo sutil en la zona azul */
 .login-bg-watermark{
 position:absolute;
-right:-40px;
-bottom:-40px;
-width:320px;
-height:320px;
-opacity:0.12;
+right: 50px;
+bottom: -50px;
+width: 500px;
+height: 600px;
+opacity: 1;
+drop-shadow: 0 0 20px rgb(243, 4, 4); 
 pointer-events:none;
 z-index:1;
 display:flex;
